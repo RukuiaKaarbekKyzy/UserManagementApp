@@ -1,0 +1,14 @@
+﻿@page
+@model UserManagementApp.Pages.Users.DeleteModel
+
+<h2>Delete page</h2>
+ <div>
+    <h3>Are you sure to delete <strong>@Model.User.Name</strong> ?</h3>
+ </div>
+
+ <form method="post">
+     <div>
+         <button type="submit">Delete</button>
+         <a href="./Index">Cancel</a>
+     </div>
+ </form>

@@ -1,0 +1,23 @@
+﻿@page
+@model UserManagementApp.Pages.Users.CreateModel
+
+<h1>Create a user</h1>
+
+<form method="post">
+    <div>
+        <label>Name:</label>
+        <input  asp-for="User.Name"/>
+    </div>
+
+    <div>
+        <label>Email:</label>
+        <input asp-for="User.Email" />
+    </div>
+
+    <div>
+        <label>Role:</label>
+        <input asp-for="User.Role" />
+    </div>
+
+    <button type="submit">Save</button>
+</form>
